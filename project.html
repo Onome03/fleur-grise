@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Fleur Grise</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+                <a href="index.html"><img src="./Images/ologo.svg" class="logo" alt="O Logo"></a>
+                <span class="openbtn" style="font-size: 30px; cursor:pointer" onclick="openNav()">&#9776;</span>  
+                <div id="myNav" class="overlay-menu">
+                     
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="project">Project</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+        </nav>
+        
+        <h2 class="clear-fix"></h2>
+    </header>
+    
+    <section class="base">
+        <div class="content">
+            <h1>GREY</h1>
+            <h2>FLOWER</h2>
+        </div>
+
+        <div class="title">
+            <h3>My<br>
+            Favourite<br>
+            Flower<br>
+            Is<br>
+            Gr<hr class="red"><h2 class="me">ey</h2></h3><hr>
+        </div>
+    </section>
+
+    <section>
+                <div id="Hibiscus" class="tabcontent">
+                    <img class="overlay" src="./Images/white.png" alt="White Flower">
+                </div>
+
+                <div id="Jade" class="tabcontent">
+                        <img class="overlay1" src="./Images/Jade Vine.png" alt="Jade Vine Flower">
+                </div>
+
+                
+                <div id="Koki" class="tabcontent">          
+                            <img class="overlay2" src="./Images/Red Hibiscus.png" alt="Koki'o Flower">
+                </div>
+        <div class="down">
+        <button class="tablink" onclick="openFlower('Hibiscus', this)" id="defaultOpen">01<br>HIBISCUS<br><p>KNOW MORE &xrarr;</p></button>
+        <button class="tablink" onclick="openFlower('Jade', this)">02<br>JADE VINE<br><p>KNOW MORE  &xrarr;</p></button>
+        <button class="tablink" onclick="openFlower('Koki', this)">03<br>KOKI'O<br><p>KNOW MORE  &xrarr;</p></button>
+    </div>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
